@@ -17,7 +17,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/modern-task-manager.git
+git clone [https://github.com/Harshit029/Task-Manager](https://github.com/Harshit029/Task-Manager).git
 cd modern-task-manager
 Install the dependencies:
 
