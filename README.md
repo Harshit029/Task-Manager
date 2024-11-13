@@ -1,44 +1,47 @@
-# Task-Manager
-Task Manager In Reactjs
- Task Manager is a React-based task management app designed to help users efficiently organize, prioritize, and track their tasks. The app supports adding new tasks, setting priorities, sorting, filtering by title and priority, and marking tasks as completed. The priority levels are color-coded to provide quick visual cues, and the app also persists data in the browser’s localStorage so tasks remain available after a page refresh.
+Task Manager
+Overview
+Task Manager is a React-based application designed to help users manage tasks efficiently with features for creating, prioritizing, and tracking progress. With an intuitive interface, users can add new tasks, set priorities, search, sort, and mark tasks as completed. The app saves all task data in localStorage, ensuring persistence across sessions.
 
-Features
-Add Tasks: Create new tasks with a specified priority level (Low, Medium, High).
-Search & Filter: Search tasks by title and filter based on priority.
-Sort: Sort tasks by title or priority.
-Completion Toggle: Mark tasks as completed, with completed tasks displayed with reduced opacity.
-Persistent Storage: Task data is stored in localStorage to retain state across browser sessions.
-Dynamic Priority Update: Change the priority of any task from the task list.
+Key Features
+Add Tasks: Quickly add new tasks with options to set priority (Low, Medium, High).
+Search & Filter: Filter tasks by title and sort them by priority or title for easy management.
+Edit Priority: Adjust task priorities directly from the task list.
+Completion Tracking: Mark tasks as completed, with visual indicators for completed tasks.
+Data Persistence: Task data is stored in localStorage to remain available after page refresh.
 Setup & Installation
 Prerequisites
-Node.js (>=14.x) and npm should be installed on your machine.
+Node.js (version 14.x or later)
+npm (Node Package Manager)
 Installation
 Clone the repository:
 
 bash
 Copy code
-git clone [https://github.com/Harshit029/Task-Manager](https://github.com/Harshit029/Task-Manager).git
+git clone 
 cd modern-task-manager
-Install the dependencies:
+Install the required dependencies:
 
 bash
 Copy code
 npm install
 Running the Application
-Start the development server:
+To start the development server, run:
 
 bash
 Copy code
 npm start
-This will start the application locally. You can access it in your browser at http://localhost:3000.
+The application should now be running locally. Open your browser and navigate to http://localhost:3000.
 
-Build for Production: To create an optimized build for deployment, run:
+Build for Production: To generate an optimized build for deployment, use:
 
 bash
 Copy code
 npm run build
-Assumptions
-Task Structure: Each task is assumed to have a title, a completion status, and a priority level.
-Task ID: The Date.now() function is used for generating unique IDs for each task.
-Sorting Criteria: Sorting by title is alphabetical, and sorting by priority is based on an assigned value for each priority (High > Medium > Low).
-UI Components: The design assumes access to UI components such as Input, Button, Card, and Checkbox, imported from custom modules or a component library.
+This will create a production-ready version in the build folder.
+
+Application Structure & Assumptions
+Task Object: Each task includes an id (unique identifier), title, completed status, and priority (Low, Medium, High).
+Unique Task IDs: The app uses Date.now() to generate unique task IDs. For larger applications, a more robust method may be needed.
+Sorting: Tasks are sorted alphabetically by title or by priority order (High > Medium > Low).
+UI Components: Custom UI components like Input, Button, and Card are used for a consistent, responsive design. These may be imported from component libraries or custom-built modules.
+LocalStorage for Persistence: Task data is stored locally, meaning tasks will persist until the user clears their browser’s storage.
